@@ -1,17 +1,17 @@
 export const profile = {
   name: 'ligeaaa',
-  title: 'Developer & Builder',
+  title: 'A strange mixture of seeking peace',
   tagline: 'A lightweight home for who I am and what I ship.',
   bio: 'I build practical software, explore new ideas, and keep a curated list of projects that are already live on the web.',
   avatarUrl: '',
   links: [
     { label: 'GitHub', url: 'https://github.com/ligeaaa' },
-    { label: 'Email', url: 'mailto:your-email@example.com' },
+    { label: 'Email', url: 'lianggang2003@gmail.com' },
   ],
   details: [
-    { label: 'Location', value: 'Update with your location' },
-    { label: 'Focus', value: 'Frontend, tooling, and product experiments' },
-    { label: 'Blog', value: 'Add your blog URL or short text here' },
+    { label: 'Location', value: 'London' },
+    { label: 'Focus', value: 'Time Series Foundational Model, Recommend System, Social Science' },
+    { label: 'Blog', value: 'Here!' },
   ],
 };
 
