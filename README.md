@@ -1,34 +1,14 @@
 # Personal Homepage
 
-This repository is a lightweight personal homepage built with `React + Vite` and designed for deployment to `GitHub Pages` through the `ligeaaa.github.io` user-site repository.
-
-## Local development
-
-1. Install dependencies:
-
-```bash
-npm install
-```
-
-2. Start the dev server:
-
-```bash
-npm run dev
-```
-
-3. Create a production build locally when needed:
-
-```bash
-npm run build
-```
+This repository is a lightweight personal homepage built with plain `HTML + CSS + JavaScript`, so it works directly on GitHub Pages without a build step.
 
 ## Edit your personal information
 
-All profile content and project links live in [`src/site.config.ts`](./src/site.config.ts).
+All personal content and project links live in [`site.config.js`](./site.config.js).
 
-You usually only need to edit two exports:
+You usually only need to edit the `profile` object and the `projects` array:
 
-```ts
+```js
 export const profile = {
   name: 'Your Name',
   title: 'Your Role',
@@ -50,7 +30,7 @@ export const projects = [
     name: 'Project Name',
     description: 'What the project does.',
     url: 'https://example.com',
-    tags: ['React', 'Tooling'],
+    tags: ['Frontend', 'Tooling'],
     status: 'Live',
   },
 ];
@@ -78,11 +58,23 @@ export const projects = [
 - Remove a project by deleting its object from the `projects` array.
 - Remove optional profile blocks by deleting `tagline`, `avatarUrl`, `details`, or any link/detail entries you do not need.
 
+## Local preview
+
+Because this is a static site, you can preview it by opening `index.html` in a browser, or by using a simple local server if you prefer.
+
+For example:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit `http://localhost:8000`.
+
 ## Deploy to GitHub Pages
 
 This repository is already named `ligeaaa.github.io`, so GitHub Pages can serve it as your personal site root.
 
-### One-time GitHub setup
+### Recommended GitHub setup
 
 1. Push this repository to the `main` branch on GitHub.
 2. Open the repository on GitHub.
@@ -92,7 +84,7 @@ This repository is already named `ligeaaa.github.io`, so GitHub Pages can serve 
 ### Deployment flow
 
 - The workflow file is [`/.github/workflows/deploy.yml`](./.github/workflows/deploy.yml).
-- Every push to `main` automatically installs dependencies, builds the Vite app, and deploys the contents of `dist`.
+- Every push to `main` deploys the static site files directly.
 - After the workflow succeeds, your homepage should be available at:
 
 ```text
@@ -101,7 +93,8 @@ https://ligeaaa.github.io/
 
 ## Project structure
 
-- `src/site.config.ts`: all editable personal content and project links
-- `src/App.tsx`: page layout and rendering
-- `src/styles.css`: all page styling
+- `index.html`: page shell
+- `main.js`: renders the homepage from config data
+- `styles.css`: all page styling
+- `site.config.js`: all editable personal content and project links
 - `.github/workflows/deploy.yml`: automatic GitHub Pages deployment

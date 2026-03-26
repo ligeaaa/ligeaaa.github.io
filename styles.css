@@ -145,7 +145,7 @@ h1 {
   margin-top: 1.5rem;
 }
 
-.link-row a {
+.pill-link {
   padding: 0.7rem 1rem;
   border-radius: 999px;
   border: 1px solid rgba(37, 51, 77, 0.12);
@@ -157,8 +157,8 @@ h1 {
     background 180ms ease;
 }
 
-.link-row a:hover,
-.link-row a:focus-visible,
+.pill-link:hover,
+.pill-link:focus-visible,
 .project-card:hover,
 .project-card:focus-visible {
   transform: translateY(-2px);

@@ -1,36 +1,9 @@
-export type ProfileLink = {
-  label: string;
-  url: string;
-};
-
-export type ProfileDetail = {
-  label: string;
-  value: string;
-};
-
-export type ProjectItem = {
-  name: string;
-  description: string;
-  url: string;
-  tags?: string[];
-  status?: string;
-};
-
-export type SiteProfile = {
-  name: string;
-  title: string;
-  tagline?: string;
-  bio: string;
-  avatarUrl?: string;
-  links: ProfileLink[];
-  details?: ProfileDetail[];
-};
-
-export const profile: SiteProfile = {
+export const profile = {
   name: 'ligeaaa',
   title: 'Developer & Builder',
   tagline: 'A lightweight home for who I am and what I ship.',
   bio: 'I build practical software, explore new ideas, and keep a curated list of projects that are already live on the web.',
+  avatarUrl: '',
   links: [
     { label: 'GitHub', url: 'https://github.com/ligeaaa' },
     { label: 'Email', url: 'mailto:your-email@example.com' },
@@ -42,12 +15,12 @@ export const profile: SiteProfile = {
   ],
 };
 
-export const projects: ProjectItem[] = [
+export const projects = [
   {
     name: 'Project One',
     description: 'A short introduction to your first deployed project.',
     url: 'https://example.com/project-one',
-    tags: ['React', 'Tooling'],
+    tags: ['Frontend', 'Tooling'],
     status: 'Live',
   },
   {
