@@ -2,6 +2,9 @@
 
 This repository is a lightweight personal homepage built with plain `HTML + CSS + JavaScript`, so it works directly on GitHub Pages without a build step.
 
+# Stone!
+![Stone Badge](https://stone.professorlee.work/api/stone/ligeaaa/ligeaaa.github.io)
+
 ## Edit your personal information
 
 All personal content and project links live in [`site.config.js`](./site.config.js).
