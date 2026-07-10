@@ -17,7 +17,6 @@ Contact
 ======
 Email: lianggang2003@gmail.com
 
-Last updated: July 2026
 
 <!-- 
 A data-driven personal website
