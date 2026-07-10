@@ -22,6 +22,11 @@ Contact
 Email: lianggang2003@gmail.com
 
 
+Other
+======
+![Cat](/images/cat.png)
+
+
 <!-- 
 A data-driven personal website
 ======
