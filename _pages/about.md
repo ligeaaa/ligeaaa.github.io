@@ -24,7 +24,7 @@ Email: lianggang2003@gmail.com
 
 Other
 ======
-![Cat](/images/cat.png)
+<img src="/images/cat.png" alt="Cat" style="width: 30%; height: auto;">
 
 
 <!-- 
