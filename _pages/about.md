@@ -12,6 +12,10 @@ I am a MRes student in Computing at [Imperial College London](https://www.imperi
 Before joining Imperial, I earned a BSc in Software Engineering from [Fuzhou University](https://www.fzu.edu.cn/).
 
 
+Research 
+======
+My current research interests include time-series forecasting, particularly modelling how interventions affect mobile health data. I am also very interested in social networks.
+
 
 Contact
 ======
