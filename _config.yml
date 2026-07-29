@@ -18,6 +18,13 @@ url                      : https://ligeaaa.github.io # The base hostname & proto
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ligeaaa/ligeaaa.github.io"
 
+# Friends shown on /friends/. Leave avatar_url blank to use the nickname initial.
+friends:
+  - avatar_url:
+    nickname: "geonas"
+    description: "A quiet soul, writing and living slowly."
+    blog_url: "https://geonas.ink/"
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
