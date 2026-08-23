@@ -24,11 +24,15 @@ friends:
     nickname: "geonas"
     description: "a nationally protected piece of trash."
     blog_url: "https://geonas.ink/"
+  - avatar_url: "https://i.loli.net/2021/07/16/yKghkEQWcY34rOU.jpg"
+    nickname: "天泽龟"
+    description: "情感计算爱好者"
+    blog_url: "https://tzturtle.moe/"
 
 # Toy projects shown on /projects/. background_image is optional.
 projects:
   - title: "HeyBlog"
-    url: "https://www.heyblog.net/"
+    url: "https://heyblog.magic-knowledge.top/about"
     description: "An intelligent blog aggregation platform."
     background_image: "/images/projects/HeyBlog.png"
   - title: "StoryChain"
