@@ -28,6 +28,10 @@ friends:
     nickname: "天泽龟"
     description: "情感计算爱好者"
     blog_url: "https://tzturtle.moe/"
+  - avatar_url: "https://blog.tyh123.top/img/avatar.jpg"
+    nickname: "硬件日记"
+    description: "记录嵌入式学习过程。"
+    blog_url: "https://blog.tyh123.top"
 
 # Toy projects shown on /projects/. background_image is optional.
 projects:
