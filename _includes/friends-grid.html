@@ -1,0 +1,35 @@
+{% assign page_lang = page.lang | default: "en" %}
+{% assign i18n = site.data.i18n[page_lang] %}
+
+{% if site.friends and site.friends.size > 0 %}
+  <div class="friends-grid">
+    {% for friend in site.friends %}
+      {% if page_lang == "zh" %}
+        {% assign nickname = friend.nickname_zh | default: friend.nickname_en %}
+        {% assign description = friend.description_zh | default: friend.description_en %}
+      {% else %}
+        {% assign nickname = friend.nickname_en | default: friend.nickname_zh %}
+        {% assign description = friend.description_en | default: friend.description_zh %}
+      {% endif %}
+      {% assign initial = nickname | slice: 0, 1 | upcase %}
+      {% assign avatar_url = friend.avatar_url | default: "" %}
+      <a class="friend-card" href="{{ friend.blog_url | escape }}" target="_blank" rel="noopener">
+        <span class="friend-card__avatar" aria-hidden="true">
+          {% if avatar_url != "" %}
+            <object class="friend-card__avatar-image" data="{{ avatar_url | escape }}">
+              <span class="friend-card__avatar-initial">{{ initial }}</span>
+            </object>
+          {% else %}
+            <span class="friend-card__avatar-initial">{{ initial }}</span>
+          {% endif %}
+        </span>
+        <span class="friend-card__body">
+          <span class="friend-card__name">{{ nickname }}</span>
+          <span class="friend-card__description">{{ description }}</span>
+        </span>
+      </a>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>{{ i18n.no_friends }}</p>
+{% endif %}

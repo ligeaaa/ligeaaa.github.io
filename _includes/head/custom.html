@@ -1,4 +1,5 @@
 {% include base_path %}
+{% assign page_lang = page.lang | default: "en" %}
 
 <!-- start custom head snippets -->
 
@@ -18,5 +19,11 @@
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="var(--global-bg-color)"/>
+
+{% if page.alternate_url %}
+  <link rel="alternate" hreflang="{% if page_lang == 'zh' %}en{% else %}zh-CN{% endif %}" href="{{ page.alternate_url | absolute_url }}" />
+  <link rel="alternate" hreflang="{% if page_lang == 'zh' %}zh-CN{% else %}en{% endif %}" href="{{ page.url | absolute_url }}" />
+  <link rel="alternate" hreflang="x-default" href="{% if page_lang == 'zh' %}{{ page.alternate_url | absolute_url }}{% else %}{{ page.url | absolute_url }}{% endif %}" />
+{% endif %}
 
 <!-- end custom head snippets -->

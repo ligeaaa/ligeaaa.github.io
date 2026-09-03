@@ -37,3 +37,13 @@ main:
     
   # - title: "Guide"
   #   url: /markdown/
+
+main_zh:
+  - title: "论文"
+    url: /zh/publications/
+
+  - title: "友链"
+    url: /zh/friends/
+
+  - title: "项目"
+    url: /zh/projects/

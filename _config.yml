@@ -21,27 +21,35 @@ repository               : "ligeaaa/ligeaaa.github.io"
 # Friends shown on /friends/. Leave avatar_url blank to use the nickname initial.
 friends:
   - avatar_url:
-    nickname: "geonas"
-    description: "a nationally protected piece of trash."
+    nickname_en: "geonas"
+    nickname_zh: "geonas"
+    description_en: "A nationally protected piece of trash."
+    description_zh: "国家一级保护废物。"
     blog_url: "https://geonas.ink/"
   - avatar_url: "https://i.loli.net/2021/07/16/yKghkEQWcY34rOU.jpg"
-    nickname: "天泽龟"
-    description: "情感计算爱好者"
+    nickname_en: "Tianze Turtle"
+    nickname_zh: "天泽龟"
+    description_en: "Affective computing enthusiast."
+    description_zh: "情感计算爱好者。"
     blog_url: "https://tzturtle.moe/"
   - avatar_url: "https://blog.tyh123.top/img/avatar.jpg"
-    nickname: "硬件日记"
-    description: "记录嵌入式学习过程。"
+    nickname_en: "Hardware Notes"
+    nickname_zh: "硬件日记"
+    description_en: "Documenting the embedded systems learning journey."
+    description_zh: "记录嵌入式学习过程。"
     blog_url: "https://blog.tyh123.top"
 
 # Toy projects shown on /projects/. background_image is optional.
 projects:
   - title: "HeyBlog"
     url: "https://heyblog.magic-knowledge.top/about"
-    description: "An intelligent blog aggregation platform."
+    description_en: "An intelligent blog aggregation platform."
+    description_zh: "一个智能博客聚合平台。"
     background_image: "/images/projects/HeyBlog.png"
   - title: "StoryChain"
     url: "https://storychain.magic-knowledge.top/"
-    description: "A collaborative storytelling platform where multiple people build a story together."
+    description_en: "A collaborative storytelling platform where multiple people build a story together."
+    description_zh: "一个支持多人共同创作故事的协作写作平台。"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -50,10 +58,14 @@ author:
   # Biographic information
   avatar           : "profile.jpg"
   name             : "Lianggang Pan"
+  name_zh          : "潘亮钢"
   pronouns         : # example: "she/her"  
-  bio              : "Hi All! MRes student in Computing"
+  bio              : "MRes student in Computing"
+  bio_zh           : "计算机学硕士研究生"
   location         : "London, United Kingdom"
+  location_zh      : "英国伦敦"
   employer         : "Imperial College London"
+  employer_zh      : "帝国理工学院"
   uri              : # URL
   email            : "lianggang2003@gmail.com" 
 

@@ -3,31 +3,8 @@ layout: archive
 title: "Friends"
 permalink: /friends/
 author_profile: true
+lang: en
+alternate_url: /zh/friends/
 ---
 
-{% if site.friends and site.friends.size > 0 %}
-  <div class="friends-grid">
-    {% for friend in site.friends %}
-      {% assign nickname = friend.nickname | default: "Friend" %}
-      {% assign initial = nickname | slice: 0, 1 | upcase %}
-      {% assign avatar_url = friend.avatar_url | default: "" %}
-      <a class="friend-card" href="{{ friend.blog_url | escape }}" target="_blank" rel="noopener">
-        <span class="friend-card__avatar" aria-hidden="true">
-          {% if avatar_url != "" %}
-            <object class="friend-card__avatar-image" data="{{ avatar_url | escape }}">
-              <span class="friend-card__avatar-initial">{{ initial }}</span>
-            </object>
-          {% else %}
-            <span class="friend-card__avatar-initial">{{ initial }}</span>
-          {% endif %}
-        </span>
-        <span class="friend-card__body">
-          <span class="friend-card__name">{{ nickname }}</span>
-          <span class="friend-card__description">{{ friend.description }}</span>
-        </span>
-      </a>
-    {% endfor %}
-  </div>
-{% else %}
-  <p>No friends yet.</p>
-{% endif %}
+{% include friends-grid.html %}

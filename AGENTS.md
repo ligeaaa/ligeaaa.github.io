@@ -30,6 +30,18 @@ the repository's Jekyll source.
 - Do not add dependencies unless the requested work requires them.
 - Preserve unrelated user changes in a dirty worktree.
 
+## Internationalization
+
+- English is the default language and keeps the root-level URLs.
+- Simplified Chinese pages use matching paths below `/zh/`.
+- Every localized page sets `lang` and `alternate_url` in its front matter.
+- Shared interface copy lives in `_data/i18n.yml`; navigation labels live in
+  `_data/navigation.yml` under `main` and `main_zh`.
+- Friends and projects store localized text in `_en` and `_zh` fields in
+  `_config.yml`. Publication documents use the same suffix convention.
+- When adding or changing user-facing content on a main page, update both
+  languages and verify both routes plus their language-switch links.
+
 ## Validation
 
 - Run `git diff --check` after every change.
@@ -49,4 +61,3 @@ running, and report its local URL. If port `4000` is occupied by an unrelated
 process, use the next available port and report that URL instead. A successful
 build alone does not satisfy this requirement; the refreshed local deployment
 must be reachable.
-

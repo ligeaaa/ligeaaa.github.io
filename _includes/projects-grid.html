@@ -1,0 +1,28 @@
+{% assign page_lang = page.lang | default: "en" %}
+{% assign i18n = site.data.i18n[page_lang] %}
+
+<p class="projects-intro">{{ i18n.projects_intro }}</p>
+
+{% if site.projects and site.projects.size > 0 %}
+  <div class="projects-grid">
+    {% for project in site.projects %}
+      {% if page_lang == "zh" %}
+        {% assign description = project.description_zh | default: project.description_en %}
+      {% else %}
+        {% assign description = project.description_en | default: project.description_zh %}
+      {% endif %}
+      {% assign background_image = project.background_image | default: "" %}
+      <a class="project-card{% if background_image != "" %} project-card--image{% endif %}" href="{{ project.url | escape }}" target="_blank" rel="noopener" aria-label="{{ i18n.visit_project }} {{ project.title | escape }}">
+        {% if background_image != "" %}
+          <span class="project-card__background" style="background-image: url('{{ background_image | relative_url | escape }}');" aria-hidden="true"></span>
+        {% endif %}
+        <span class="project-card__body">
+          <span class="project-card__name">{{ project.title }}</span>
+          <span class="project-card__description">{{ description }}</span>
+        </span>
+      </a>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>{{ i18n.no_projects }}</p>
+{% endif %}

@@ -3,25 +3,8 @@ layout: archive
 title: "Projects"
 permalink: /projects/
 author_profile: true
+lang: en
+alternate_url: /zh/projects/
 ---
 
-<p class="projects-intro">These are a few toy projects I built in my spare time, mostly just for fun. Since I have limited time to maintain them, I haven't added internationalization, so most are available only in Chinese. If any of them interest you, feel free to get in touch!</p>
-
-{% if site.projects and site.projects.size > 0 %}
-  <div class="projects-grid">
-    {% for project in site.projects %}
-      {% assign background_image = project.background_image | default: "" %}
-      <a class="project-card{% if background_image != "" %} project-card--image{% endif %}" href="{{ project.url | escape }}" target="_blank" rel="noopener" aria-label="Visit {{ project.title | escape }}">
-        {% if background_image != "" %}
-          <span class="project-card__background" style="background-image: url('{{ background_image | relative_url | escape }}');" aria-hidden="true"></span>
-        {% endif %}
-        <span class="project-card__body">
-          <span class="project-card__name">{{ project.title }}</span>
-          <span class="project-card__description">{{ project.description }}</span>
-        </span>
-      </a>
-    {% endfor %}
-  </div>
-{% else %}
-  <p>No projects yet.</p>
-{% endif %}
+{% include projects-grid.html %}
