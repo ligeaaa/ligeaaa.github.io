@@ -17,6 +17,9 @@ main:
   - title: "Projects"
     url: /projects/
 
+  - title: "Blog"
+    url: /blog/
+
   # - title: "Talks"
   #   url: /talks/    
 
@@ -47,3 +50,6 @@ main_zh:
 
   - title: "项目"
     url: /zh/projects/
+
+  - title: "博客"
+    url: /zh/blog/
