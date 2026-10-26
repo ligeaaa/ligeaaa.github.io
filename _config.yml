@@ -38,6 +38,12 @@ friends:
     description_en: "Documenting the embedded systems learning journey."
     description_zh: "记录嵌入式学习过程。"
     blog_url: "https://blog.tyh123.top"
+  - avatar_url: "https://blog.cloverta.top/images/avatar.jpg"
+    nickname_en: "HP Half-Price Bento Club"
+    nickname_zh: "HP半价便当同好会"
+    description_en: "Welcome! Please turn left after entering."
+    description_zh: "欢迎光临，请进门左转"
+    blog_url: "https://blog.cloverta.top"
 
 # Toy projects shown on /projects/. background_image is optional.
 projects:
